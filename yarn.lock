@@ -1413,10 +1413,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@human-writes/core@npm:^0.5.59":
-  version: 0.5.59
-  resolution: "@human-writes/core@npm:0.5.59"
-  checksum: e2d5982c7f41c419590cab7641e751c2a584876e507bb7f827971240d73ca2317adf023dc3851edf52a764c95e3de0d3c0d2fae73068f060f9069a8e3a02d67c
+"@human-writes/core@npm:^0.5.61":
+  version: 0.5.61
+  resolution: "@human-writes/core@npm:0.5.61"
+  checksum: b9e1d3e76b6c7c1372feebe2834fe524d4dcf5eb62137d8a90693729afcc8b97256e7e531d9dc7a1813ceb6eda39d6f9d22d285da5b160218adb8938847777a5
   languageName: node
   linkType: hard
 
@@ -1427,7 +1427,7 @@ __metadata:
     "@babel/core": ^7.21.8
     "@babel/eslint-parser": ^7.21.8
     "@babel/preset-env": ^7.21.5
-    "@human-writes/core": ^0.5.59
+    "@human-writes/core": ^0.5.61
     "@microsoft/eslint-formatter-sarif": ^3.0.0
     babel-loader: ^9.1.2
     eslint: ^7.32.0 || ^8.2.0

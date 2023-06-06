@@ -15,9 +15,9 @@ CodeWriter supports code highlighting thanks to HighlightJS library integration.
 The writing speed depends on the delay between two charaters plus the process time to determine the character to display. The delay is 60 milliseconds by default.
 
 Both components also propose to:
-- make mistakes :angry:
-- correct mistakes right away :smile:
-- chain each other with the parameter _depends-on-selector_, eg: with 2 components if the second references the first it starts when the first finishes.
+- make typos :angry:
+- correct typos right away :smile:
+- chain two components with the parameter _depends-on-selector_, eg: with 2 components if the second references the first it starts when the first finishes.
 - write at random speed. The speed is computed from 25% faster to 75% slower than the given speed parameter.  
 
 ## Live demo
@@ -68,7 +68,7 @@ Store your text block in a place accessible by URL and declare it as a source of
     name="hello"
     source="/my-block-of-text.html" 
     speed="20"
-    make-mistakes="true" 
+    make-typos="true" 
     styles="/css/index.css,/css/app.css" 
     classes="App-content" 
 >
@@ -105,11 +105,13 @@ Feel free to send me feedback of your experience to _ohmyinbox99_at_gmail_dot_co
 
 ## Changelog
 
+v0.5.61 - Update this README.
+
 v0.5.60 - Separate web components from Core package.
 
 v0.5.50 - Refactor the components in order to remove a lot of ducplicate code.
 
-v0.5.49 - Fix mistakes that were all the same for one instance of a web component. Add a feature to write at random speed.
+v0.5.49 - Fix typos that were all the same for one instance of a web component. Add a feature to write at random speed.
 
 v0.5.48 - Add a feature to chain components one after the other. 
 
@@ -119,7 +121,7 @@ v0.5.46 - Fix a bug that prevented CodeWriter from working in some cases.
 
 ## Roadmap
 
-New features to come:
+features to come:
 
 - use component slot to set the text block instead of fetching a source by URL,
 - raise an event when a specific word is found,
