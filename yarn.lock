@@ -1440,7 +1440,7 @@ __metadata:
     gulp: ^4.0.2
     gulp-clean-css: 4.3.0
     gulp-cli: ^2.3.0
-    highlightjs: ^9.16.2
+    highlight.js: 11.8.0
     path: ^0.12.7
     prettier: ^2.8.8
     ts-loader: ^9.4.3
@@ -4321,10 +4321,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"highlightjs@npm:^9.16.2":
-  version: 9.16.2
-  resolution: "highlightjs@npm:9.16.2"
-  checksum: 511de5a5f2d3568963ebe4a337b2abe4fd5856de458b85af877eca0958c66245e107ca90a8f8ab06a3c3169f0f0f7c08d668e1c649ec0a8a1d871d99f7e7a476
+"highlight.js@npm:11.8.0":
+  version: 11.8.0
+  resolution: "highlight.js@npm:11.8.0"
+  checksum: d2578a57aee7315946ff19379053fd0a28b127baabf7617ab1d28d62cdc4eaf3d75053569cb8479a5afdc7a68f1ba9a6c1d612d8ae399b4b9aa43093b4fb6831
   languageName: node
   linkType: hard
 

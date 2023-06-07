@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "@human-writes/core": "^0.5.61",
-    "highlightjs": "^9.16.2"
+    "highlight.js": "11.8.0"
   }
 }

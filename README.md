@@ -105,6 +105,8 @@ Feel free to send me feedback of your experience to _ohmyinbox99_at_gmail_dot_co
 
 ## Changelog
 
+v0.5.62 - Update highlight.js dependency
+
 v0.5.61 - Update this README.
 
 v0.5.60 - Separate web components from Core package.
