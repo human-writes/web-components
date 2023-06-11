@@ -15,8 +15,29 @@ export default class TextWriterComponent extends WriterComponent {
 `;
     }
 
-    writeLikeAHuman() {
-        const base = new Writer(this);
-        base.writeLikeAHuman("to-write");
+    onFinishedWriting(html) {
+        // Raise an event outside the shadow DOM
+        // when all is done and ready
+        const finishedEvent = new CustomEvent("finishedWriting", {
+            bubbles: true,
+            composed: true,
+            detail: {
+                content: html
+            }
+        });
+        this.dispatchEvent(finishedEvent);
+        this.setAttribute("finished", "true");
+    }
+
+    async writeLikeAHuman() {
+        const onFinished = this.onFinishedWriting.bind(this);
+        const tw = new Writer(
+            this.shadowRoot,
+            this.source,
+            this.speed,
+            this.makeTypos,
+            onFinished
+        );
+        await tw.writeLikeAHuman("to-write");
     }
 }

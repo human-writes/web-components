@@ -52,7 +52,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@human-writes/core": "^0.5.61",
-    "highlight.js": "11.8.0"
+    "@human-writes/core": "^0.5.63",
+    "highlight.js": "^11.8.0"
   }
 }

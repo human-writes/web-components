@@ -127,11 +127,32 @@ textarea {
             }
         }
 
-        super.connectedCallback();
+        await super.connectedCallback();
     }
 
-    writeLikeAHuman() {
-        const cw = new Writer(this);
-        cw.writeLikeAHuman("to-write", "to-copy");
+    onFinishedWriting(html) {
+        // Raise an event outside the shadow DOM
+        // when all is done and ready
+        const finishedEvent = new CustomEvent("finishedWriting", {
+            bubbles: true,
+            composed: true,
+            detail: {
+                content: html
+            }
+        });
+        this.dispatchEvent(finishedEvent);
+        this.setAttribute("finished", "true");
+    }
+
+    async writeLikeAHuman() {
+        const onFinished = this.onFinishedWriting.bind(this);
+        const cw = new Writer(
+            this.shadowRoot,
+            this.source,
+            this.speed,
+            this.makeTypos,
+            onFinished
+        );
+        await cw.writeLikeAHuman("to-write", "to-copy");
     }
 }
